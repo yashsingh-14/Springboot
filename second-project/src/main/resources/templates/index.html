@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>index page</h1>
+    <a th:href="@{/about}">about</a> 
+    <hr>
+    <h1>My name is <span th:text="${name}" >Steve Roger</span> and heroic name is <span th:text="${heroic_name}" >Captain</span> </h1>
+
+    <hr>
+    <h2>======= If Condition ========</h2>
+    <h1 th:if="${ishero}" >He is hero</h1>
+
+    <hr>
+    <h2>======= If else condition =======</h2>
+    <h1 th:if="${ishero}" >He is hero</h1>
+    <h1 th:unless="${ishero}" >He is not a hero</h1>
+
+    <hr>
+    <h2 >======= Switch case =======</h2>
+    <div th:switch="${heroic_name}" >
+        <p th:case="Captain" >captain america is a hero</p>
+        <p th:case="${Ironman}" >Ironman is genius</p>
+        <p th:case="*" >Need Improvement</p>
+    </div>
+</body>
+</html>
