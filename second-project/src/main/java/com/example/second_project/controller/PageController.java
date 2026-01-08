@@ -18,7 +18,15 @@ public class PageController {
         model.addAttribute("ishero", false);
         //loop
 
-      List<String>avengers = new ArrayList<>();
+       List<String>vegitables = new ArrayList<>();
+       vegitables.add("Tomatos");
+       vegitables.add("potatos");
+       vegitables.add("garlic");
+       vegitables.add("onion");
+
+       model.addAttribute("veg", vegitables);
+
+     List<String>avengers = new ArrayList<>();
       avengers.add("Captain America");
       avengers.add("Hulk");
       avengers.add("Spider man");
