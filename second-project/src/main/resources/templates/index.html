@@ -26,10 +26,17 @@
         <p th:case="Captain" >captain america is a hero</p>
         <p th:case="Ironman" >Ironman is genius</p>
         <p th:case="*" >Need Improvement</p>
+
+        <hr>
+        <h2>=================</h2>
+        <h1>Vegitables</h1>
+        <h2 th:each="v:${veg}" th:text="${v}" ></h2>
+
          <hr>
     <h2>====================</h2>
     <h1>Avengers</h1>
     <h2 th:each="a:${aven}" th:text="${a}" ></h2>
+
     </div>
   
 </body>
