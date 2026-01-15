@@ -1,0 +1,21 @@
+/* HOME PAGE BACKGROUND */
+body {
+  background-color: #e8f4ff; 
+}
+
+/* HOME PAGE MAIN CONTENT */
+h1 {
+  color: #0358a7;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #033e75;
+  font-size: 16px;
+}
+
+/* HOME PAGE CARDS EXTRA SPACING */
+.card {
+  border: 1px solid #c8def5;
+}
