@@ -1,5 +1,8 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,8 +39,8 @@
     <h2>====================</h2>
     <h1>Avengers</h1>
     <h2 th:each="a:${aven}" th:text="${a}" ></h2>
-
-    </div>
-  
+    
+</div>
+<a th:href="@{/product}">Go to Product page</a>
 </body>
 </html>

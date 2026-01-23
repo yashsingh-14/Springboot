@@ -1,0 +1,20 @@
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>product page</h1>
+    <h1>product id: <span th:text="${product_id}" ></span></h1>
+
+    <a th:href="@{/product/{id}(id=${product_id})}">Send product id</a>
+
+    <a th:href="@{/}">Go to index page</a>
+</body>
+</html>
